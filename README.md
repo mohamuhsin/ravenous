@@ -3,10 +3,10 @@ This website is called “Ravenous”, a Yelp-like clone.
 
 # The website was built in four parts:
 
-Creating Static Components
-Passing Information to Components
-Setting the State of Ravenous Components
-Interacting with the Yelp API
+1. Creating Static Components
+2. Passing Information to Components
+3. Setting the State of Ravenous Components
+4. Interacting with the Yelp API
 
 # Creating Static Components.
 
