@@ -24,7 +24,7 @@ class SearchBar extends React.Component {
   }
 
   getSortByClass(sortByOption){
-    if(sortByOption === this.sortBy) {
+    if(sortByOption === this.state.sortBy) {
       return 'active';
     } else {
       return '';
@@ -36,11 +36,21 @@ class SearchBar extends React.Component {
 
   }
 
+  handleTermChange(event){
+    this.setState({term: event.target.value})
+
+  }
  
+  handleLocationChange(event){
+    this.setState({term: event.target.value})
+
+  }
+
   renderSortByOptions() {
     return Object.keys(sortByOptions).map((sortByOption) => {
       let sortByOptionValue = sortByOptions[sortByOption];
-      return <li key={sortByOptionValue} className={this.getSortByClass(sortByOptionValue)}>{sortByOption}</li>;
+      return <li key={sortByOptionValue} className={this.getSortByClass(sortByOptionValue)} 
+      onClick={this.handleSortByChange.bind(this, sortByOptionValue)}>{sortByOption}</li>;
     });
   }
 
