@@ -8,7 +8,7 @@ This website is called “Ravenous”, a Yelp-like clone.
 3. Setting the State of Ravenous Components.
 4. Interacting with the Yelp API.
 
-# Creating Static Components.
+# Creating Static.
 
 Here’s a quick overview of how Ravenous should function:
 
