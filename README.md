@@ -8,9 +8,8 @@ This website is called “Ravenous”, a Yelp-like clone.
 3. Setting the State of Ravenous Components.
 4. Interacting with the Yelp API.
 
-# Creating.
 
-Here’s a quick overview of how Ravenous should function:
+# Here’s a quick overview of how Ravenous should function:
 
 As a user, you should be able to search for restaurants.
 As a user, you should be able to view a list of restaurants returned by the Yelp API.
