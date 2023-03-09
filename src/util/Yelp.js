@@ -9,6 +9,10 @@ const Yelp = {
               }
         }).then(response => {
             return response.json();
+        }).then(jsonResponse => {
+            if(jsonResponse.businesses) {
+                return response
+            }
         })
     }
 
