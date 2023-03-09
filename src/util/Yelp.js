@@ -1,2 +1,6 @@
 
 const apiKey = '';
+
+const Yelp = {
+
+}
