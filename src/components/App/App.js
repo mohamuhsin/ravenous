@@ -8,9 +8,20 @@ import Yelp from '../../util/Yelp';
 
 export default class App extends React.Component {
 
-  searchYelp(term, location, sortBy){
-    console.log(`You are Searching Yelp with ${term}, ${location}, ${sortBy}`);
+  constructor(props){
+    super(props);
+    this.state = {
+      businesses: []
+    }
+    this.searchYelp = this.searchYelp.bind(this);
+  }
 
+  searchYelp(term, location, sortBy){
+    Yelp.searchYelp(term, location, sortBy).then((business) => {
+      this.setState({
+
+      });
+    })
   }
 
 render() {

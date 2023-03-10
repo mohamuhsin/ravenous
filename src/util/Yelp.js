@@ -1,7 +1,7 @@
 const apiKey = "sY37uYV4ARLqfPCblzCFF6qroGmi0ep8Y62akkr7MjytsLSHaEGCKcGtOPAWzNd7kQmifoMXG97S1Sv_DBydKHz4wNwzCWGlkzuPVzjNIzDQ5n_t0B_m_ZRWgksLZHYx";
 
 const Yelp = {
-  search(term, location, sortBy) {
+  searchYelp(term, location, sortBy) {
     return fetch(
       `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`,
       {
